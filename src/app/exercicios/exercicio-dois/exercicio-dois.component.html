@@ -1,0 +1,11 @@
+<section>
+  <h3>Exerício</h3>
+  <h5>1) Crie um novo componente dentro do módulo exercicios (exercicio-dois).
+    2) Dentro do componente, crie uma propriedade idade do tipo number. Crie dois botões um para aumentar a idade e outro para diminuir.
+    Obs: Colocar ExercicioDoisComponent dentro do exports de exercicios.module</h5>
+
+    <h2 [class.maior-idade]="idade > 18">{{idade}}</h2>
+    <p *ngIf="idade > 18">Maior de Idade</p>
+    <button (click)="aumentar()">Aumentar</button>
+    <button (click)="diminuir()">Diminuir</button>
+</section>

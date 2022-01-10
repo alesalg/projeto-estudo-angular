@@ -1,0 +1,31 @@
+<section>
+  <h3>Interpolação</h3> <!-- Maneira de inserir valores dados no html-->
+  <p>{{ nome }}</p>
+  <p>Olá eu sou {{ nome }} e tenho {{ idade }} anos</p>
+  <hr />
+</section>
+<section>
+  <h3>Property binding</h3><!-- vincula as propriedades para o HTML-->
+  <img [src]= "link" />
+  <hr />
+</section>
+<section>
+  <h3>Event binding</h3> <!--vincular evento-->
+  <button (click)="alerta()">Alerta</button>
+  <hr />
+</section>
+<section>
+  <h3>Two-way data binding</h3> <!--Vinculação de dados entre componentes e o DOM-->
+  <hr />
+  <input type="text" [(ngModel)] = "nomeCompleto" />
+  <p>{{ nomeCompleto}}</p>
+  <h4>Exemplo:</h4>
+  <input type="text" [(ngModel)]="estudante.nomeCompleto" />
+  <input type="text" [(ngModel)]="estudante.idade" />
+  <input type="text" [(ngModel)]="estudante.nota1" />
+  <input type="text" [(ngModel)]="estudante.nota2" />
+  <input type="text" [(ngModel)]="estudante.nota3" />
+  <p>{{ estudante | json }}</p>
+</section>
+
+
