@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes.component.scss']
 })
 export class PipesComponent implements OnInit {
+  date = new Date();
+  nome = 'Alexandre';
+  percentual = 0.55898342432;
+  salario = 3000;
 
   constructor() { }
 
