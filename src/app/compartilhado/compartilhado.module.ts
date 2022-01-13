@@ -2,20 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FilterPipe } from './pipes/filter/filter.pipe';
 import { IncPipe } from './pipes/inc/inc.pipe';
-
+import { ObfsEmailPipe } from './pipes/obfs-email/obfs-email.pipe';
 
 
 @NgModule({
   declarations: [
     FilterPipe,
-    IncPipe
+    IncPipe,
+    ObfsEmailPipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     FilterPipe,
-    IncPipe
+    IncPipe,
+    ObfsEmailPipe
   ]
 })
 export class CompartilhadoModule { }
